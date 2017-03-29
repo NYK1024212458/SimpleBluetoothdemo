@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+        android:background="#00ff00"
+        android:text="蓝牙简单的使用"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="16dp"
+
+        android:onClick="click"
+        android:id="@+id/frist1"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="调用系统的阿皮打开蓝牙界面" />
+<TextView
+    android:layout_margin="8dp"
+    android:textSize="18sp"
+    android:layout_marginLeft="8dp"
+    android:background="#00ff00"
+    android:text="模仿设置界面的蓝牙调用页面"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="16dp"
+        android:onClick="click"
+        android:id="@+id/btnIsSupport"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="检查设备是否支持蓝牙设备" />
+    <Button
+        android:layout_marginLeft="16dp"
+        android:onClick="click"
+        android:id="@+id/btnIsTurnOn"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="检查蓝牙的开启状态" />
+    <Button
+        android:layout_marginLeft="16dp"
+        android:onClick="click"
+        android:id="@+id/btnTurnOn"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="点击打开蓝牙状态" />
+    <Button
+        android:layout_marginLeft="16dp"
+        android:onClick="click"
+        android:id="@+id/btnTrunOff"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="点击关闭蓝牙状态" />
+    <Button
+        android:layout_marginLeft="8dp"
+        android:onClick="click"
+        android:text="代开设备的可发现的按钮(会自动打开蓝牙,原本是120秒,修改为300)"
+        android:id="@+id/btn_opneDiscoverAbility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="click"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/btnGetBlueToothDeviceLIst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙情况下,获取已经配对过的设备" />
+    <com.kunstudy.administrator.bluetoothdemo.ListViewForScrollView
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/listview_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.kunstudy.administrator.bluetoothdemo.ListViewForScrollView>
+    <Button
+        android:onClick="click"
+        android:id="@+id/btn_serchDevice"
+        android:text="搜索周边的打开可见的蓝牙设备"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--用于展示搜索到的设备展示-->
+    <com.kunstudy.administrator.bluetoothdemo.ListViewForScrollView
+        android:layout_marginLeft="16dp"
+        android:id="@+id/listview_serchDevice"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.kunstudy.administrator.bluetoothdemo.ListViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
